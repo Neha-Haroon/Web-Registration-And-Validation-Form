@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp validate with JS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f66de91617.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="registrationBlock">
+        <h2><span>Re</span>gisteration</h2>
+
+        <!-- Registration main form -->
+        <div class="form">
+            <form>
+
+                <div id="nameSection">
+
+                    <i id="fa-regular fa-user"></i>
+
+                    <input type="text" id="name" placeholder="Enter Your Name"><br>
+
+                </div>
+
+                <div id="nameError">
+
+                    <i id="fa fa-circle-exclamation" id="nameExcla"></i>
+
+                    <div class="error"></div>
+
+                </div>
+
+                <div id="emailSection">
+
+                    <i id="fa-regular fa-envelope"></i>
+
+                    <input type="text" id="email" placeholder="Enter Your Email"><br>
+
+                </div>
+
+                <div id="emailError">
+                    <i id="fa fa-circle-exclamation" id="emailExcla"></i>
+                    <div class="error"></div>
+                </div>
+
+                <!-- Section for password input -->
+                <div id="passSection">
+
+                    <i id="fa fa-lock"></i>
+
+                    <input type="password" id="password" placeholder="Create Password">
+
+                    <i id="fa fa-eye" id="showPassword"></i><br>
+                </div>
+                <!-- error div for password -->
+                <div id="passError">
+                    <i id="fa fa-circle-exclamation" id="passExcla"></i>
+                    <div class="error"></div>
+                </div>
+
+                <!-- Section for confirm password input -->
+                <div id="confirmPassSection">
+
+                    <i id="fa fa-lock"></i>
+
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+                    <i id="fa fa-eye" id="showConfirmPassword"></i><br>
+
+                </div>
+                <!-- error div for confirm password -->
+                <div id="confirmPassError">
+                    <i id="fa fa-circle-exclamation" id="confirmPassExcla"></i>
+                    <div class="error"></div>
+                </div>
+
+                <div id="accept">
+                    <input type="checkbox" name="accept" id="checkbox" value="accepted">
+                    <label for="checkbox">I accept all terms & conditions</label>
+                </div>
+
+                <div id="checkboxError">
+                    <i id="fa fa-circle-exclamation" id="checkboxExcla"></i>
+                    <div class="error"></div>
+                </div>
+
+                <button type="submit">Register now</button>
+
+
+                <p>Already have an account? <a href="#">Login now</a></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="apps.js"></script>
+</body>
+
+</html>
